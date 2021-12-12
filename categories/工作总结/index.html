@@ -35,6 +35,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
@@ -48,7 +52,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">读书笔记、工作总结与生活感悟</a>
+          <a href="/" id="subtitle">编程笔记、读书感悟与工作小结</a>
         </h2>
       
     </div>
@@ -60,8 +64,6 @@
           <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
         
           <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
         
       </nav>
     </div>
@@ -255,6 +257,27 @@
 
 
 
+
+  
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '090167a06504ca076dd4',
+      clientSecret: '88de3e115b3d96ae6c2557e3ab0e254aa42d4d12',
+      repo: 'https://github.com/tao-space/gitalk',
+      owner: 'tao-space',
+      admin: ['tao-space'],
+      id: md5(window.location.pathname),
+      distractionFreeMode: false,
+      language: 'zh-CN',
+      pagerDirection: 'last'
+    });
+    gitalk.render('comments');
+  </script>
 
 
 

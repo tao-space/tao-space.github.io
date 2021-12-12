@@ -35,6 +35,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
@@ -48,7 +52,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">读书笔记、工作总结与生活感悟</a>
+          <a href="/" id="subtitle">编程笔记、读书感悟与工作小结</a>
         </h2>
       
     </div>
@@ -60,8 +64,6 @@
           <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
         
           <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
         
       </nav>
     </div>
@@ -147,6 +149,8 @@
 <blockquote>
 <p>需要特别注意的是Hexo有两个<code>_config.yml</code>配置文件，一份位于站点根目录下，主要包含 Hexo 站点本身的配置，下文中会称为**<code>根_config.yml</code><strong>；另一份位于主题目录下（themes/主题名/_config.yml），这份配置由主题作者提供，主要用于配置主题相关的选项,下文中会称为</strong><code>主题_config.yml</code>**。</p>
 </blockquote>
+<span id="more"></span>
+
 <h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h3><p>您可以直接到<a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake">BlueLake发布页</a>下载，然后解压拷贝到<code>themes</code>目录下，修改配置即可。<br>不过我还是推荐使用<code>GIT</code>来checkout代码，之后也可以通过<code>git pull</code>来快速更新。</p>
 <h4 id="1-1-安装主题"><a href="#1-1-安装主题" class="headerlink" title="1.1 安装主题"></a>1.1 安装主题</h4><p>在根目录下打开终端窗口：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git bashgit clone https://github.com/chaooo/hexo-theme-BlueLake.git themes/BlueLake</span><br></pre></td></tr></table></figure>
@@ -294,6 +298,8 @@
       
       
         
+  <div id="comments"></div>
+
 
 
 
@@ -444,6 +450,27 @@
 
 
 
+
+  
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '090167a06504ca076dd4',
+      clientSecret: '88de3e115b3d96ae6c2557e3ab0e254aa42d4d12',
+      repo: 'https://github.com/tao-space/gitalk',
+      owner: 'tao-space',
+      admin: ['tao-space'],
+      id: md5(window.location.pathname),
+      distractionFreeMode: false,
+      language: 'zh-CN',
+      pagerDirection: 'last'
+    });
+    gitalk.render('comments');
+  </script>
 
 
 
