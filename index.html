@@ -131,7 +131,7 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="对新员工入职培训的感受-20211204"><a href="#对新员工入职培训的感受-20211204" class="headerlink" title="对新员工入职培训的感受 - 20211204"></a>对新员工入职培训的感受 - 20211204</h1><p>从11月29日到12月3日，我们三十多位学员在单单的引导下共同完成了第15期的新员工入职培训项目。这一周的干货极多，体验极好，让我迫不及待地想要分享刚刚收获的累累硕果。保罗在课堂上也说过，复盘是成年人重要的自我提升的方法。因此，我花了些时间将培训过程中印象深刻的内容记录下来，以供后续慢慢消化。培训课程的具体内容不是这篇文章想要强调的，我主要记录自己对课程结构的理解，几个印象深刻的场景等。在文章的最后一节也整理了一些建议。</p>
+        <p>从11月29日到12月3日，我们三十多位学员在单单的引导下共同完成了第15期的新员工入职培训项目。这一周的干货极多，体验极好，让我迫不及待地想要分享刚刚收获的累累硕果。保罗在课堂上也说过，复盘是成年人重要的自我提升的方法。因此，我花了些时间将培训过程中印象深刻的内容记录下来，以供后续慢慢消化。培训课程的具体内容不是这篇文章想要强调的，我主要记录自己对课程结构的理解，几个印象深刻的场景等。在文章的最后一节也整理了一些建议。</p>
       
     </div>
     <footer class="article-footer">
@@ -158,7 +158,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/12/%5Bhexo%5DBlueLake%20Demo/">BlueLake Demo</a>
+      <a class="p-name article-title" href="/2021/12/12/%5Bhexo%5DBlueLake%20Demo/">快速部署博客</a>
     </h1>
   
 
@@ -189,12 +189,7 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+        <p>介绍部署博客的几个步骤。</p>
       
     </div>
     <footer class="article-footer">
@@ -252,13 +247,7 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="2021年2月3日更新："><a href="#2021年2月3日更新：" class="headerlink" title="2021年2月3日更新："></a>2021年2月3日更新：</h3><p><a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake">BlueLake主题</a>写了有些年头了，随着<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>升级到<code>5.X</code>，<a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake">BlueLake</a>很多配置已经过时，在使用中难免出现问题。</p>
-<p>所以，我利用工作之余抽了些时间进行了大改版，主题模板引擎由<a target="_blank" rel="noopener" href="https://pugjs.org/zh-cn/api/reference.html">Jade(Pug)</a>换成了<a target="_blank" rel="noopener" href="https://ejs.bootcss.com/">EJS</a>，以<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>为原型进行二次开发；保留<a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake">BlueLake主题</a>老版本的其他功能，如原生JS实现站内搜索功能，本地分享等；新添加了一些新的功能，如打赏模块，集成新的三方评论等等。</p>
-<p>说了这么多不如你亲自体验来的直接，BlueLake主题地址：<a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake%E3%80%82">https://github.com/chaooo/hexo-theme-BlueLake。</a></p>
-<p>在阅读本文之前，假定您已经成功安装了<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，并使用 Hexo 提供的命令创建了一个静态博客。Hexo是一个快速、简洁且高效的博客框架。Hexo基于Node.js ，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<blockquote>
-<p>需要特别注意的是Hexo有两个<code>_config.yml</code>配置文件，一份位于站点根目录下，主要包含 Hexo 站点本身的配置，下文中会称为**<code>根_config.yml</code><strong>；另一份位于主题目录下（themes/主题名/_config.yml），这份配置由主题作者提供，主要用于配置主题相关的选项,下文中会称为</strong><code>主题_config.yml</code>**。</p>
-</blockquote>
+        <p>本博客基于<a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake">BlueLake</a>主题完成，它是一个简洁轻量化的响应式Hexo博客主题。BlueLake由<a target="_blank" rel="noopener" href="https://github.com/chaooo">Charles</a>精心制作，感谢Charles先生。</p>
       
     </div>
     <footer class="article-footer">
@@ -289,7 +278,7 @@
       <ul>
         
           <li>
-            <a href="/2021/12/12/%5Bhexo%5DBlueLake%20Demo/">BlueLake Demo</a>
+            <a href="/2021/12/12/%5Bhexo%5DBlueLake%20Demo/">快速部署博客</a>
           </li>
         
           <li>
